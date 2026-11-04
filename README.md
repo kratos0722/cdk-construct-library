@@ -43,6 +43,7 @@ consumer inherits it on their next `cdk deploy`.
 | **`SecureFunction`**      | Lambda function     | Active X-Ray tracing, a purpose-built least-privilege execution role (no `*:*`), a dedicated `StructuredLogGroup`, KMS-encrypted environment variables, conservative memory/timeout. |
 | **`StandardVpc`**         | VPC                 | Private-isolated **and** private-with-egress subnet tiers, S3 + DynamoDB gateway VPC endpoints, and VPC flow logs to a retained log group. |
 | **`SecureTable`**         | DynamoDB table      | KMS server-side encryption, point-in-time recovery, on-demand billing, `RETAIN` removal policy. |
+| **`SecureQueue`**         | SQS queue           | Server-side encryption (SSE-SQS default, optional KMS), TLS-only queue policy, an encrypted dead-letter queue with a bounded `maxReceiveCount`, `RETAIN` removal policy. |
 
 Every secure default above is overridable through the construct's props.
 
