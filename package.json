@@ -1,0 +1,49 @@
+{
+  "name": "@clarence-averion/secure-cdk-constructs",
+  "version": "0.1.0",
+  "description": "Secure-by-default AWS CDK v2 construct library: least-privilege IAM and hardened configuration as the starting point for every stack, not an afterthought.",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Clarence Averion",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kratos0722/cdk-construct-library.git"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "aws-cdk",
+    "constructs",
+    "security",
+    "secure-by-default",
+    "least-privilege",
+    "iam",
+    "typescript",
+    "platform-engineering"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.275.0",
+    "constructs": "^10.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "30.0.0",
+    "@types/node": "26.6.6",
+    "aws-cdk-lib": "2.275.0",
+    "constructs": "10.8.1",
+    "jest": "30.5.2",
+    "ts-jest": "29.4.15",
+    "typescript": "5.9.3"
+  }
+}
