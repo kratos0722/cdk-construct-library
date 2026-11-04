@@ -11,3 +11,4 @@ export * from './structured-log-group';
 export * from './secure-function';
 export * from './standard-vpc';
 export * from './secure-table';
+export * from './secure-queue';
